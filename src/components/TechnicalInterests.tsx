@@ -11,6 +11,7 @@ export const TechnicalInterests: React.FC = () => {
   const touchStartX = useRef<number | null>(null);
   const isSwiping = useRef<boolean>(false);
   const mobileRailRef = useRef<HTMLDivElement>(null);
+  const hasMounted = useRef(false);
 
   const getIcon = (key: string) => {
     switch (key) {
@@ -103,6 +104,11 @@ export const TechnicalInterests: React.FC = () => {
 
   // Sync mobile horizontal scroll rail when selectedIndex changes
   useEffect(() => {
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
+
     if (mobileRailRef.current) {
       const activeChild = mobileRailRef.current.children[selectedIndex] as HTMLElement;
       if (activeChild) {
