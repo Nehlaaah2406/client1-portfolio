@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
   college: 'SCMS School of Engineering and Technology, Ernakulam',
   university: 'APJ Abdul Kalam Technological University (KTU)',
   portraitImage: portraitImg,
-  email: 'aiswaryavr2004@gmail.com', // direct placeholder matching user identity
+  email: 'aiswaryavr05@gmail.com',
   phone: '+91 85907 04337',
   linkedinUrl: 'https://www.linkedin.com/in/aiswarya-v-r-5a864335b?utm_source=share_via&utm_content=profile&utm_medium=member_android',
   instagramUrl: 'https://www.instagram.com',
