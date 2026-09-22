@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1D1416;
+    background-color: #FAF8F5;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.font-heading-heavy {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.font-hero-name {
+  font-family: 'Urbanist', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.font-editorial {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial-serif {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-editorial-display {
+  font-family: 'Italiana', 'Cormorant Garamond', serif;
+}
+
+.font-quote-italic {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+}
+
+.font-mono-tech {
+  font-family: 'Space Grotesk', monospace;
+}
+
+/* Metallic gradient effect for display typography matching the reference image */
+.hero-gradient-text {
+  background: linear-gradient(180deg, #8c8c8c 0%, #303030 50%, #0d0d0d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-silver-gradient {
+  background: linear-gradient(180deg, rgba(160, 160, 160, 0.8) 0%, rgba(30, 30, 30, 0.95) 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c2c2c2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
