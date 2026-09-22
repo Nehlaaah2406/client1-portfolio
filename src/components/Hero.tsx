@@ -171,11 +171,6 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="relative z-20 w-full bg-black pt-12 sm:pt-20 pb-16 sm:pb-24 px-4 sm:px-8">
         <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
           
-          {/* Introductory Italic Serif Quote tailored to Electrical Engineering */}
-          <p className="font-quote-italic text-base sm:text-xl md:text-2xl text-neutral-300 font-light leading-relaxed max-w-2xl mx-auto">
-            Every resilient power grid, intelligent circuit, and sustainable breakthrough begins with the curiosity to
-          </p>
-
           {/* Large High-Contrast Display Headline tailored to the portfolio */}
           <div className="space-y-1 sm:space-y-2">
             <h2 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-white uppercase leading-none">
