@@ -156,7 +156,7 @@ export const TechnicalInterests: React.FC = () => {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
           onWheel={handleWheel}
-          className="relative w-full rounded-3xl bg-white border border-[#E5DDD2] shadow-[0_4px_24px_rgba(0,0,0,0.03)] py-10 sm:py-16 px-4 sm:px-12 min-h-[460px] sm:min-h-[520px] flex items-center justify-center overflow-hidden touch-pan-y"
+          className="relative w-full rounded-3xl bg-white border border-[#E5DDD2] shadow-[0_4px_24px_rgba(0,0,0,0.03)] py-10 sm:py-16 px-4 sm:px-12 min-h-[360px] sm:min-h-[520px] flex items-center justify-center overflow-hidden touch-pan-y"
         >
           
           {/* Subtle architectural background dots & crosshairs */}
@@ -168,11 +168,11 @@ export const TechnicalInterests: React.FC = () => {
             HOVER OR SCROLL TO INSPECT
           </div>
 
-          <div className="relative w-full max-w-4xl h-[420px] sm:h-[460px] flex items-center justify-center">
+          <div className="relative w-full max-w-4xl h-[280px] sm:h-[460px] flex items-center justify-center">
             
             {/* SVG Large Circular Arc Track with Ticks & Nodes */}
             <svg
-              className="absolute -left-6 xs:left-0 sm:left-4 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 w-[320px] sm:w-[440px] md:w-[500px] h-[320px] sm:h-[440px] md:h-[500px] pointer-events-none"
+              className="hidden sm:block absolute left-4 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 w-[440px] md:w-[500px] h-[440px] md:h-[500px] pointer-events-none"
               viewBox="0 0 500 500"
               fill="none"
             >
@@ -237,7 +237,7 @@ export const TechnicalInterests: React.FC = () => {
             </svg>
 
             {/* Interactive Arc Number Labels with generous touch & hover hitboxes */}
-            <div className="absolute -left-6 xs:left-0 sm:left-4 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 w-[320px] sm:w-[440px] md:w-[500px] h-[320px] sm:h-[440px] md:h-[500px] pointer-events-none">
+            <div className="hidden sm:block absolute left-4 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 w-[440px] md:w-[500px] h-[440px] md:h-[500px] pointer-events-none">
               {TECHNICAL_INTERESTS.map((_, idx) => {
                 const angleDeg = startAngle + (idx / (totalItems - 1)) * (endAngle - startAngle);
                 const angleRad = (angleDeg * Math.PI) / 180;
@@ -278,7 +278,7 @@ export const TechnicalInterests: React.FC = () => {
             </div>
 
             {/* Center Focus Area: Large Active Number + Title & Subtitle */}
-            <div className="relative ml-20 xs:ml-28 sm:ml-40 md:ml-64 flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-10 z-10 pr-2">
+            <div className="relative w-full sm:ml-40 md:ml-64 flex flex-col md:flex-row items-start md:items-center gap-5 sm:gap-10 z-10 px-2 sm:px-0">
               
               {/* Massive Active Number with Minimalist High-Contrast Cut */}
               <AnimatePresence mode="wait">
