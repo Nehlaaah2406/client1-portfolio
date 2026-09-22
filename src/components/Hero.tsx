@@ -9,8 +9,8 @@ import { motion } from 'motion/react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 // Landscape hero photo matching the editorial reference framing
-import landscapeHeroPhoto from'../assets/images/Minimalist Portrait in a Pastel Yellow Salwar Kameez.png';
-import couchPortrait from '../assets/images/Monochrome Garden Wall Portrait.png';
+import landscapeHeroPhoto from '../assets/images/ChatGPT Image Sep 22, 2026, 07_08_18 PM.png';
+import couchPortrait from '../assets/images/WhatsApp Image 2026-09-20 at 11.28.55 PM.jpeg';
 
 interface HeroProps {
   currentPhoto?: string;
